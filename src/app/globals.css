@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #121212;
+  --secondary-color: #121212;
+  --primary-font-color: #fff;
+  --secondary-font-color: #fff;
+  --neon-color: #04ffc3;
+  --stars-color:#fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fcfffe;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,9 +41,99 @@
     --foreground: #ededed;
   }
 }
-
+* {
+  scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth !important;
+}
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #000;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
+.euro{
+  font-family: Eurostile;
+}
+.franklin{
+  font-family: Franklin Gothic;
+}
+.dmsans{
+  font-family: 'DmSans';
+}
+.inter{
+  font-family: 'Inter';
+}
+.neon{
+  background-color: #04ffc3;
+}
+.monu{
+  font-family: monument extended;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: 'franklin';
+    src: url(/assignment_3/public/FranklinGothic.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'euro';
+    src: url(/assignment_3/public/eurostile.TTF) format('TTF');
+  }
+  @font-face {
+    font-family: 'dmsans';
+    src: url(/assignment_3/public/DMSans-VariableFont_opsz\,wght.ttf) format('tff');
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(/assignment_3/public/Inter-VariableFont_opsz\,wght.ttf);
+  }
+  @font-face {
+    font-family: 'MonumentExtended-Regular';
+    src: url(/assignment_3/public/MonumentExtended-Regular.otf);
+  }
+}
+
+@font-face {
+  font-family: Franklin Gothic;
+  src: url(/assignment_3/public/FranklinGothic.ttf);
+}
+@font-face {
+  font-family: Eurostile;
+  src: url(/assignment_3/public/eurostile.TTF);
+}
+@font-face {
+  font-family: 'DmSans';
+  src: url(/assignment_3/public/DMSans-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(/assignment_3/public/Inter-VariableFont_opsz\,wght.ttf) format(ttf);
+}
+@font-face {
+  font-family: 'MonumentExtended-Regular';
+  src: url(/assignment_3/public/MonumentExtended-Regular.otf) format(otf);
+}
+@font-face {
+  font-family: 'Monument-ultra';
+  src: url(/assignment_3/public/MonumentExtended-Ultrabold.otf);
+}
+@font-face{
+  font-family:monument extended;
+  font-style:normal;
+  font-weight:400;
+  src:local('Monument Extended'),url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff) format('woff')}
+  
+@font-face {
+  font-family: roboto;
+  src: url(/assignment_3/public/Roboto-Medium.ttf);
+}
+@font-face{font-family:monument extended ultra;font-style:normal;font-weight:800;src:local('Monument Extended'),url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff) format('woff')}

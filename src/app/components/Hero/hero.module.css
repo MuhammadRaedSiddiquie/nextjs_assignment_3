@@ -1,0 +1,111 @@
+/* .section {
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    gap: 12vw;
+}
+
+
+.left_aside {
+    width: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    color: var(--primary-font-color);
+    background-color: var(--primary-color);
+    padding-left: 10px;
+    border-radius: 15px;
+    border-left: 1px solid #64ffda;
+    box-shadow: inset -12px 0px 13px -10px var(--neon-color);
+    height: 430px;
+}
+
+.text_wrapper h1 {
+    font-size: 43px;
+    font-family: var(--primary-text);
+    letter-spacing: 2px;
+    color: var(--secondary-font-color);
+}
+
+.text_wrapper h2 {
+    font-size: 37px;
+    font-family: var(--third-text);
+    letter-spacing: 2px;
+    color: var(--neon-color);
+}
+
+.text_wrapper h3 {
+    font-size: 18px;
+    font-family: var(--third-text);
+    word-spacing: 0.8px;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+}
+
+
+.right_aside {
+    height: 67vh;
+    width: 380px;
+}
+
+.btn_more {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 150px;
+}
+
+.btn_about {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #224557;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: var(--neon-color);
+    color: var(--primary-font-color);
+
+}
+
+.icons span {
+    font-size: 25px;
+    margin: 10px 5px;
+    color: var(--primary-font-color);
+}
+
+.icons span a:hover {
+    color: #04a982;
+}
+
+.btn_about h4 {
+    font-family: mySecondFont;
+
+    font-weight: 600;
+}
+
+.btn_about:hover {
+    background-color: #04a982;
+}
+
+.image_container {
+    height: 430px;
+    width: 380px;
+    animation: slide2 linear;
+    animation-timeline: view();
+    animation-range: entry 100% cover 100%;
+    top: 140px;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.image {
+    width: 300px;
+} */

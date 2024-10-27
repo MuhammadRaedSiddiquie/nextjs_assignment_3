@@ -1,0 +1,71 @@
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: #0a0a0a;
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+}
+.section>:nth-child(1){
+    font-family: roboto;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.projects {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: 420px;
+    padding: 0px 25px;
+}
+
+
+.card {
+    height: 200px;
+    width: 315px;
+    background-color: var(--secondary-color);
+    border-right: 1px solid var(--neon-color);
+    border-left: 1px solid var(--neon-color);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 2px 0px 3px 0px var(--neon-color), -2px 0px 3px 0px var(--neon-color);
+
+}
+
+.imagecard {
+    height: 200px;
+    width: 315px;
+    background-color: #111;
+
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagecard img {
+    position: absolute;
+    width: 500px;
+    
+
+
+
+}
